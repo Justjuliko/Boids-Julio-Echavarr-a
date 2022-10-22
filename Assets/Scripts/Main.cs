@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Main : MonoBehaviour {
 
-    // adapted from https://processing.org/examples/flocking.html
+ 
 
     public int numberOfCows = 100;
     public float areaSize = 100;
@@ -18,7 +18,7 @@ public class Main : MonoBehaviour {
 
     Flock flock;
 
-	// Use this for initialization
+	
 	void Start () {
         
         flock = new Flock();
@@ -34,13 +34,10 @@ public class Main : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
+	
     void Update () {
         flock.Update();
 	}
 
-//    void mousePressed() {
-//        flock.AddBoid(new Boid(Input.mousePosition.x,Input.mousePosition.y));
-//    }
 
 }

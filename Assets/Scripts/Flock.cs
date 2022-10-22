@@ -2,19 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 
-// The Flock (a list of Boid objects)
-// adapted from https://processing.org/examples/flocking.html
+
 
 public class Flock {
-    List<Boid> boids; // An List for all the boids
+    List<Boid> boids; // lista de boids en este caso las vacas
 
     public Flock() {
-        boids = new List<Boid>(); // Initialize the List
+        boids = new List<Boid>(); 
     }
 
     public void Update() {
         foreach (var boid in boids) {
-            boid.Update(boids);  // Passing the entire list of boids to each boid individually
+            boid.Update(boids);  
         }
     }
 
